@@ -10,7 +10,7 @@ async def weather(session: CommandSession):
     #切除前缀（获取后方数据）
     if not city:
         #第一次返回为空执行
-        city = (await session.aget(prompt='不知道要看哪的天气捏')).strip()
+        city = (await session.aget(prompt='你想要看哪的天气捏')).strip()
         while not city:
             #多次返回为空执行
             city = (await session.aget(prompt='请输入城市名捏，不然找不到捏')).strip()

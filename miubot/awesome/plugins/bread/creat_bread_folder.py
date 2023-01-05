@@ -3,7 +3,7 @@ from nonebot.permission import SUPERUSER
 import sqlite3
 import time
 
-@on_command('open_shop', aliases=('创建面包账户','创建面包篮','创建面包库'))
+@on_command('creat_bread', aliases=('创建面包账户','创建面包篮','创建面包库'))
 async def talk(session: CommandSession):
     qid = str(session.ctx['user_id'])
     tm = time.time()

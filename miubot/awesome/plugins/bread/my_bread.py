@@ -3,7 +3,7 @@ from nonebot.permission import SUPERUSER
 import sqlite3
 
 
-@on_command('open_shop', aliases=('吃面包','🍞🍞'))
+@on_command('my_bread', aliases=('我的面包'))
 async def talk(session: CommandSession):
     uid = str(session.ctx['user_id'])
     try:

@@ -1,10 +1,9 @@
 from nonebot import on_command, CommandSession
-from nonebot.permission import SUPERUSER
 import sqlite3
 import time
 import random
 
-@on_command('open_shop', aliases=('买面包','🍞'), permission=SUPERUSER)
+@on_command('buy_bread', aliases=('买面包','🍞'))
 async def talk(session: CommandSession):
     uid = str(session.ctx['user_id'])
     tm = time.time()

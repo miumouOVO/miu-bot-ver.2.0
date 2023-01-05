@@ -1,7 +1,6 @@
 from nonebot import on_command, CommandSession
 from nonebot.permission import SUPERUSER
 import sqlite3
-import time
 
 @on_command('open_shop', aliases=('面包店开张'), permission=SUPERUSER)
 async def creat_list(session: CommandSession):

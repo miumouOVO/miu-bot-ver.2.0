@@ -4,7 +4,7 @@ import sqlite3
 import time
 import random
 
-@on_command('open_shop', aliases=('吃面包','🍞🍞'))
+@on_command('eat_bread', aliases=('吃面包','🍞🍞'))
 async def talk(session: CommandSession):
     uid = str(session.ctx['user_id'])
     tm = time.time()

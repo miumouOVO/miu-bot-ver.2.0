@@ -2,7 +2,7 @@ from nonebot import on_command, CommandSession
 import random
 
 #命令定义与处理
-@on_command('talk', aliases=('十连寻访','十连抽卡','十连','方舟十连'))
+@on_command('get_card', aliases=('十连寻访','十连抽卡','方舟十连'))
 async def talk(session: CommandSession):
     report_message = await report_msg()
     report = await get_report()
